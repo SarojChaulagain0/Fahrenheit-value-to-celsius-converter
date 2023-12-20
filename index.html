@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JavaScript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <h1 id="a">Converting the Fahrenheit value to celsius.</h1>
+    <label for="number" name="label" class="label">
+        Enter the value you want to convert: 
+    </label><br><br>
+    <input type="number" value="number" id="number"><br>
+    <br>
+
+    <button id="submit" onclick="change(document.getElementById('number').value)">Submit</button>
+    <p id="text"></p>
+    <script>
+        function change(input){
+            let result = "The value is "+ ((5/9) * (input - 32)) + " Celsius";
+            document.getElementById("text").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
